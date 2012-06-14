@@ -1,0 +1,207 @@
+.cal_box {
+	position:relative;		
+	border:1px solid #c1cdcd;
+	width:820px;
+	height:170px;
+	padding:5px;
+	text-align:center;
+	background-color:white;
+}
+.cal_box_cal {
+	position:relative;
+	display:inline-block;
+	width:189px;
+	height:150px;
+	color: black;
+}
+
+#cal_box_left_year, #cal_box_mid_year, #cal_box_right_year {
+	position:relative;
+	font-size: 13px;
+}
+.cal_box_num .cal_box_week div {
+	position:relative;
+	display:inline-block;
+}
+.cal_box_days div {
+	display:inline-block ;
+	font-size:13px;
+	text-align:center;
+	width:27px;
+	color:black;
+}
+.cal_box_week {
+	position:relative;
+	width:100%;	
+	text-align:left;
+}
+
+.cal_box_week_first {
+	text-align:right;
+}
+.cal_box_week div {
+	width:27px;
+	text-align:center;
+	color:black;
+}
+.cal_box_week a.cal_box_day:hover div {
+	background-color:#C1CDCD;
+	color:white;
+}
+
+#cal_box_mid {
+	border-left:1px solid #D1D3D4;
+	border-right:1px solid #D1D3D4;
+}
+
+#cal_box_right, #cal_box_mid {
+}
+
+.cal_box_button {
+	display:inline-block;
+	position: relative;
+	font-size:17px;
+	top:-50px;
+}
+.cal_box_button div {
+	background-color:#C1CDCD;
+	border: 1px solid #C1CDCD;
+	padding:24px 3px;
+	color:white;
+	width:10px;
+}
+.cal_box_button a:hover div {
+	background-color:white;
+	color: #C1CDCD;
+}
+#cal_box_settings {
+	width: 200px !important;
+	height: 140px !important;
+	float:right;
+	top:15px;
+}
+.cal_box_settings_header div {
+	display:inline-block;
+}
+.cal_box_settings_header div:first-child {
+	font-size:13px;
+}
+#cal_box_settings div:last-child {
+	display:inline-block;
+}
+.cal_box_day_select div{
+	background-color:#EF4136;
+	color:white;
+}
+
+#cal_inputbox_1 , #cal_inputbox_2 {
+	width: 80px!important;
+	height: 20px !important;
+	font-size: 14px !important;	
+	position:display-inline;
+}
+
+.cal_inputbox {
+	position:relative;
+	left: 8px;
+}
+
+.cal_focus, #cal_box_custom_range_div:hover {
+	border: 1px solid #fafafa;
+	-webkit-box-shadow: 0px 0px 6px #007eff; 
+	-moz-box-shadow: 0px 0px 6px #007eff; 
+	-o-box-shadow: 0px 0px 6px #007eff; 
+	-khtml-box-shadow: 0px 0px 6px #007eff; 
+	-ms-box-shadow: 0px 0px 6px #007eff; 
+	box-shadow: 0px 0px 6px #007eff; 
+}
+
+input.cal_input_bug, input.cal_input_bug:focus, input.cal_input_bug:hover {
+	outline:none;
+	border: 1px solid #ef4136 !important;
+	-webkit-box-shadow: 0px 0px 6px #ef4136 !important; 
+	-moz-box-shadow: 0px 0px 6px #ef4136 !important; 
+	-o-box-shadow: 0px 0px 6px #ef4136 !important; 
+	-khtml-box-shadow: 0px 0px 6px #ef4136 !important; 
+	-ms-box-shadow: 0px 0px 6px #ef4136 !important; 
+	box-shadow: 0px 0px 6px #ef4136 !important; 
+}
+#cal_box_custom_range_div {
+	background: url(../../ga/img/down_arrow_select.jpg) no-repeat right white;
+	overflow:hidden;
+	position:relative;
+	color: #a1a2a2;
+	border: 1px solid #d1d3d4;
+	margin: 7px;
+	left: 8px;
+}
+
+#cal_box_custom_range {
+	outline:none;
+}
+
+#cal_apply div, #cal_cancel div {
+	color: black;
+	border:1px solid #D1D3D4;
+	padding: 3px 6px;
+	top: 13px;
+	position:relative;
+	margin: 0 5px;
+}
+
+#cal_apply:hover div, #cal_cancel:hover div {
+	color: white;
+	background-color: #EF4136;
+	border: 1px solid #EF4136;
+}
+
+#cal_box_custom_range {
+	width: 180px;
+	font-size: 14px;
+	padding: 0px;
+}
+
+
+/* single / min cal */
+
+.mc-box div {
+	padding: 0px !important;
+}
+.mc-box {
+	border: 1px solid #D1D3D4;
+	width: 216px;
+	padding: 5px 10px !important;
+	
+}
+.mc-box #mc-mid-month, .mc-box #mc-mid-year {
+	text-align:center;
+}
+.mc-box #mc-mid-year {
+	font-size: 13px;
+}
+.mc-box .cal_box_button:last-child {
+	float:right;
+	left: 15px;
+	top:-86px;
+}
+.mc-box .cal_box_button div {
+	padding: 15px 0px !important;
+}
+.mc-box .cal_box_today div {
+	border: 1px solid #EF4136 !important;
+}
+.mc-box .cal_box_day div {
+	border: 1px solid transparent;
+}
+.mc-box .cal_box_select div {
+	border: 1px solid #EF4136 !important;
+	background-color: #EF4136;
+	color: white;
+}
+.mc-box .cal_box_past div, .cal_box .cal_box_past div {
+	color:#ADADAD;
+}
+.mc-box .cal_box_past, .cal_box .cal_box_past {
+	cursor : default;
+}
+

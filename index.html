@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang='utf8'>
+	<head>
+		<link rel='stylesheet' href='calendar.css'/>	
+		<script src='jquery.1.7.2.js' type='text/javascript'/></script>
+		<script src='calendar.min.js' type='text/javascript'/></script>
+	</head>
+	<body>
+		<div id='min-date'></div>
+		<div id='min'>
+
+		</div>
+			
+		<div id='full-date'></div>
+		<div id='full'>
+
+		</div>
+		<script>
+		var lang = {
+			 calendar : {
+				 months : ["January", "February","March","April","May","June","July","August","September","October","November","December"],
+				 days : ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+				 move_back_m : "Move back a month",
+				 move_for_m : "Move forward a month",
+				 move_back_year : "Move back a year",
+				 move_for_year : "Move forward a year",
+				 "7days" : "Last 7 Days",
+				 "30days" : "Last 30 Days",
+				 "90days" : "Last 90 Days",
+				 "custom" : "custom",
+			 }
+
+		};
+
+		var date = new Date();
+		 $.calendar.min({
+				//to use min
+                                 div : "min",
+				//call back on change
+                                 changeRange : function(r) {
+                                         var str = r.year+"-"+(parseInt(r.month)+1)+"-"+r.day;
+                                         $("#min-date").html(str);
+                                 },
+				//setting a range 
+                                 range : 1,
+				//sets the default start date
+				/* 
+				defaultStartDate : {
+					year: date.getFullYear(),
+					month: date.getMonth(),
+					day: date.getDate(),
+				},
+				*/
+		 },lang);
+
+		$.calendar.full({
+			div : "full",
+			changeRange : function(r) {
+				$('#full-date').html(r[1].year+"-"+(parseInt(r[1].month)+1)+"-"+r[1].day+" ~ "+r[0].year+"-"+(parseInt(r[0].month)+1)+"-"+r[0].day);
+			},
+			defaultStartDate : {
+				year: date.getFullYear(),
+				month: date.getMonth(),
+				day: date.getDate(),
+			},
+			apply : function() {
+				//for on click apply button call back
+			},
+		},lang);
+
+		</script>
+	</body>
+</html>
